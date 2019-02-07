@@ -40,6 +40,10 @@ Some data is given.
 
 ![Data Points](https://raw.githubusercontent.com/alphacrash/alphacrash/master/src/images/data-points.png)
 
-What we have to do is to draw a line that seperates the blue and red dots. This is what neural networks help us in accomplishing.
+What we have to do is to draw a line that seperates the blue and red dots. 
+
+![Data Points Seperated](https://raw.githubusercontent.com/alphacrash/alphacrash/master/src/images/data-points-sep.png)
+
+This is what neural networks help us in accomplishing.
 
 That's it!
