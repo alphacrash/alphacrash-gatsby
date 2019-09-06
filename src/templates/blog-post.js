@@ -16,7 +16,7 @@ export default function Template({ data }) {
             </p>
 
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <Link to="/">Go back</Link>
+            <Link to="/">Go back to the homepage</Link>
         </Layout>
     )
 }
