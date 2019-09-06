@@ -10,7 +10,7 @@ export default function Template({ data }) {
             <h1>{post.frontmatter.title}</h1>
             <p>
                 <span className="text-muted">{post.frontmatter.date}</span>
-                {' '}
+                {' '}by{' '}
                 <span className="text-muted">{post.frontmatter.author}</span>
             </p>
 
