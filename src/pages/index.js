@@ -8,7 +8,7 @@ import Post from "../components/post"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="alphacrash" />
     <h1>Posts</h1>
 
     <StaticQuery
