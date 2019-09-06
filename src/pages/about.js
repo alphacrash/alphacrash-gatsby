@@ -11,7 +11,6 @@ const AboutPage = () => (
 
     <div>
       <p>Welcome to my blog.</p>
-      <p>I am currently an undergraduate doing major in CS.</p>
       <p>I love to code, play guitar, read books and think about philosophy in general.</p>
       <p>You can find my codes in my <a href="https://github.com/alphacrash">GitHub</a> page.</p>
     </div>
