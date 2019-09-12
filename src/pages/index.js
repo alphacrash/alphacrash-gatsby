@@ -1,54 +1,43 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-
+import { Link, graphql } from "gatsby"
+import { Card } from 'react-bootstrap'
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Post from "../components/post"
 
+const BlogIndex = ({ data }) => {
+  const { edges: posts } = data.allMdx
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="alphacrash" />
-    <h1>Posts</h1>
+  return (
+    <Layout>
+      <h1>Awesome MDX Blog</h1>
 
-    <StaticQuery
-      query={indexQuery}
-      render={data => {
-        return (
-          <div>
-            {data.allMarkdownRemark.edges.map(({ node }) => (
-              <Post
-                key={node.id}
-                title={node.frontmatter.title}
-                author={node.frontmatter.author}
-                path={node.frontmatter.path}
-                date={node.frontmatter.date}
-                excerpt={node.frontmatter.excerpt}
-              />
-            ))}
-          </div>
-        )
-      }} />
-  </Layout>
-)
+      <div>
+        {posts.map(({ node: post }) => (
+          <Card className="bg-transparent" style={{ border: `none`, paddingTop: `1em`, paddingBottom: `1em` }}>
+            <span className="text-secondary">{post.frontmatter.date}</span>
+            <Link to={post.frontmatter.path} className="text-primary" style={{ fontSize: `30px` }}>{post.frontmatter.title}</Link>
+          </Card>
+        ))}
+      </div>
+    </Layout>
+  )
+}
 
-const indexQuery = graphql`
-{
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          date(formatString: "MMM Do YYYY")
-          author
-          path
+export const pageQuery = graphql`
+  query blogIndex {
+    allMdx {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            title
+            path
+            date(formatString: "MMM Do YYYY")
+          }
         }
-        excerpt
       }
     }
   }
-}
 `
 
-export default IndexPage
+export default BlogIndex
