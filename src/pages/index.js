@@ -1,14 +1,18 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { Card } from 'react-bootstrap'
+
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const BlogIndex = ({ data }) => {
   const { edges: posts } = data.allMdx
 
   return (
     <Layout>
-      <h1>Awesome MDX Blog</h1>
+      <SEO title="alphacrash" />
+
+      <h1>Posts</h1>
 
       <div>
         {posts.map(({ node: post }) => (
@@ -23,21 +27,21 @@ const BlogIndex = ({ data }) => {
 }
 
 export const pageQuery = graphql`
-  query blogIndex {
-    allMdx {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            title
-            path
-            date(formatString: "MMM Do YYYY")
-          }
+query blogIndex {
+  allMdx(sort: {order: DESC, fields: frontmatter___date}) {
+    edges {
+      node {
+        id
+        excerpt
+        frontmatter {
+          title
+          path
+          date(formatString: "MMM Do YYYY")
         }
       }
     }
   }
+}
 `
 
 export default BlogIndex
