@@ -12,17 +12,17 @@ import i5 from "../images/a3i5.png"
 
 Let's say we have a dataset with six houses. It provides us the size of the house and the price accordingly. So, we plot accordingly. 
 
-<img src={i1} className="w-50" />
+<img src={i1} className="w-75" />
 
 If you are familiar with linear regression, let's put a straight line in these data. We know prices cannot be negative, so we bend it to zero instead.
 
-<img src={i2} className="w-50" />
+<img src={i2} className="w-75" />
 
 This blue line acts like a function that predicts the price of a house when the size of the house is given.
 
 Basically, it looks like this.
 
-<img src={i3} className="w-50" />
+<img src={i3} className="w-75" />
 
 Input goes to neuron. Neuron predicts the output.
 
@@ -34,7 +34,7 @@ Generally, price depends on factors like walkability, school quality, family siz
 
 Let's look at the image.
 
-<img src={i4} className="w-50" />
+<img src={i4} className="w-75" />
 
 The inputs are passed through neurons stack like above called hidden units. They will figure out by itself.
 
@@ -44,4 +44,4 @@ Neural network are remarkably good at figuring out functions that accurately map
 
 We can imagine neural networks as such.
 
-<img src={i5} className="w-50" />
+<img src={i5} className="w-75" />
