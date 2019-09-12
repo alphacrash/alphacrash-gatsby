@@ -30,18 +30,18 @@ A simple neural network.
 
 ## Let's make it a bit complicated.
 
-Generally, price depends on various factors like walkability to important areas, school quality, family size, etc.
+Generally, price depends on factors like walkability, school quality, family size, etc. These factors can be deduced from input given. For example, based on zip code and wealth we can estimate the quality of school. 
 
-These factors can be deduced from input given. For example, based on zip code and wealth we can estimate the quality of school. Let's look at the image.
+Let's look at the image.
 
 <img src={i4} className="w-50" />
 
-The inputs are passed through neurons stack like above. These neurons are called hidden units. They will figure out by itself.
+The inputs are passed through neurons stack like above called hidden units. They will figure out by itself.
 
-A neural networks as following. We just have to provide input 'x' and it will predict the output 'y'.
+We just have to provide input and it will predict the output.
 
-What's really good about a neural network is that when we give enough data about x and y, they are remarkably good at figuring out functions that accurately map from x to y.
+Neural network are remarkably good at figuring out functions that accurately map from x to y.
 
-We can imaginge neural networks as such.
+We can imagine neural networks as such.
 
 <img src={i5} className="w-50" />
