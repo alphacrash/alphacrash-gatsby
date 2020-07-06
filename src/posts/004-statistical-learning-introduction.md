@@ -1,6 +1,6 @@
 ---
 title: 'Introduction to Statistical Learning'
-date: 2020-07-06 16:00:00
+date: 2020-07-05 16:00:00
 path: '/statistical-learning-1'
 ---
 
