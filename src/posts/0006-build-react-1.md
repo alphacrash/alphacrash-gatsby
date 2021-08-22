@@ -1,4 +1,8 @@
-# createElement
+---
+title: 'Build React 1: createElement'
+date: 2021-08-22 09:00:00
+path: '/build-react-1'
+---
 
 We will replace React code with our own version of React.
 
