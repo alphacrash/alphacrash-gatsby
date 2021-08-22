@@ -141,3 +141,12 @@ text["nodeValue"] = element.props.children
 node.appendChild(text)
 container.appendChild(node)
 ```
+
+--------------------------------
+
+Original Post written by 
+Rodrigo Pombo: https://pomb.us/build-your-own-react/
+
+[I'm writing these post for my learning and documentation.](https://uwaterloo.ca/centre-for-teaching-excellence/teaching-resources/teaching-tips/developing-assignments/cross-discipline-skills/using-writing-learning-tool)
+
+--------------------------------
