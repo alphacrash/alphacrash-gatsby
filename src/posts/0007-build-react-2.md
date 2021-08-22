@@ -4,6 +4,8 @@ date: 2021-08-23 09:00:00
 path: '/build-react-2'
 ---
 
+Code Pen - [Build React - Step 2 - Render](https://codepen.io/amthesud/pen/gORYdWm)
+
 Let's write our version of `ReactDOM.render` function.
 
 For now, we only care about adding stuff to the DOM.
