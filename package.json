@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "alphacrash",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "SUD <sudhansu.ace@gmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
@@ -37,15 +37,13 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/alphacrash/alphacrash"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "packageManager": "yarn@3.0.1"
+    "url": "https://github.com/alphacrash/alphacrash/issues"
+  }
 }
